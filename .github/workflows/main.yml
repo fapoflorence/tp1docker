@@ -23,5 +23,5 @@ jobs:
 
       #finally build your app with the latest command
       - name: Build and test with Maven
-        working-directory: "devops-livecoding/simple-api"
+        working-directory: "devops-livecoding/simple-api-student-main"
         run: mvn clean verify
