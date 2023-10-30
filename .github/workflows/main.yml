@@ -23,7 +23,7 @@ jobs:
 
       #finally build your app with the latest command
       - name: Build and test with Maven
-        working-directory: "backend_api/simple-api"
+        working-directory: "backend_api/simple-api-student-main"
         run: mvn clean verify
 
   # define job to build and publish docker image
