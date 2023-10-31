@@ -1,0 +1,9 @@
+- name: Run Proxy Container
+  docker_container:
+    name: my_proxy
+    image: fapo030/tp-devops-httpserver:latest
+    networks: 
+      - name: network_one
+    ports:
+      - "80:80"
+

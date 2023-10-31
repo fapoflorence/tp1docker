@@ -1,0 +1,7 @@
+- name: Run Application Container
+  docker_container:
+    name: my-api
+    image: fapo030/tp-devops-imple-api-student-main:latest
+    networks: 
+      - name: network_one
+

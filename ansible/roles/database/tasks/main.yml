@@ -1,0 +1,6 @@
+- name: Run Database Container
+  docker_container:
+    name: my-db
+    image: fapo030/tp-devops-database:latest
+    networks: 
+     - name: network_one
