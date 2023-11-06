@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   backend:
-    build: ./backend_api
+    build: ./backend_api/simple-api-student-main
     container_name: my-api
     networks:
       - my-network
@@ -21,6 +21,16 @@ services:
     build: ./httpserver
     ports:
       - "80:80"
+    networks:
+      - my-network
+    depends_on:
+      - front
+      
+  front:
+    build: ./devops-front-main
+    container_name: front
+    ports:
+      - "8081:80"
     networks:
       - my-network
     depends_on:
